@@ -55,7 +55,8 @@ public class PoitlOperatorService {
 			headerList.add(annoName);
 		}
 
-		RowRenderData headerRow = Rows.of(headerList.toArray(new String[headerList.size()])).textColor("FFFFFF").bgColor("4472C4").create();
+//		RowRenderData headerRow = Rows.of(headerList.toArray(new String[headerList.size()])).textColor("FFFFFF").bgColor("4472C4").create();
+		RowRenderData headerRow = Rows.of(headerList.toArray(new String[headerList.size()])).textColor("000000").bgColor("DCE6F1").create();
 
 		for (int i = 0; i < tableList.size(); i++) {
 			DbTable dbTable = tableList.get(i);

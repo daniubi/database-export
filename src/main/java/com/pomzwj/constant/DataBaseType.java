@@ -16,7 +16,8 @@ public enum DataBaseType {
     /**
      * MYSQL
      */
-    MYSQL(Arrays.asList("columnName", "dataType","nullAble","primary","autoIncrement", "defaultVal", "comments")),
+//    MYSQL(Arrays.asList("columnName", "dataType","nullAble","primary","autoIncrement", "defaultVal", "comments")),
+    MYSQL(Arrays.asList("columnName", "dataType", "comments")),
     /**
      * ORACLE
      */
