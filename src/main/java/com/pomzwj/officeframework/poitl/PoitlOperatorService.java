@@ -62,6 +62,16 @@ public class PoitlOperatorService {
 			DbTable dbTable = tableList.get(i);
 			List<RowRenderData> rowList = this.getRow(dbTable, columnNames, headerRow);
 			SegmentData segmentData = new SegmentData();
+
+
+//			Tables.TableBuilder inst = Tables.ofPercentWidth("100%");
+//			inst.center();
+//
+//			RowRenderData[] row = rowList.toArray(new RowRenderData[rowList.size()]);
+//			if (null != row) {
+//				Arrays.stream(row).forEach(inst::addRow);
+//			}
+//			segmentData.setTable(inst.create());
 			segmentData.setTable(Tables.create(rowList.toArray(new RowRenderData[rowList.size()])));
 			segmentData.setTableName(dbTable.getTableName());
 			segmentData.setTableComments("(" + dbTable.getTableComments() + ")");

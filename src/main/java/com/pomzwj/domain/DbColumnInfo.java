@@ -12,7 +12,8 @@ import java.io.Serializable;
  * @date 2021-03-04
  */
 public class DbColumnInfo implements Serializable {
-    @DataColumnName(name = "列名")
+//    @DataColumnName(name = "列名")
+    @DataColumnName(name = "代码")
     public String columnName;
     @DataColumnName(name = "数据类型")
     public String dataType;
@@ -26,7 +27,8 @@ public class DbColumnInfo implements Serializable {
     public Boolean autoIncrement;
     @DataColumnName(name = "主键")
     public Boolean primary;
-    @DataColumnName(name = "备注")
+//    @DataColumnName(name = "备注")
+    @DataColumnName(name = "注释")
     public String comments;
     @DataColumnName(name = "精度")
     public String dataScale;
